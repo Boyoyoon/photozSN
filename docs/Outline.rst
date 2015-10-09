@@ -4,5 +4,6 @@ Traditionally, light curves have been used to estimate the intrinsic brightness 
 
 In the absence of spectra, we will be using light curves to also do these two functions. In particular, during this project, we will work on obtaining redshift
 from these light curves. The goals of this project would be to use our existing tools to
+
 - Build Statistics of how well these do in obtaining redshift
 - Try to understand the cause of 'failures' if significant.
