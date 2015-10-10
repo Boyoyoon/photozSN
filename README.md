@@ -1,7 +1,7 @@
 # SN light curve characterizaton without strong prior knowledge of redshift
 
 This is a project to study characterization of SN light curves with partial
-information on the redshift of the SN. Feel free to discuss this more either by emailing us at lisaleemcb@gmail.com, rbiswas4@gmail.com or by using the issues feature of this repository, or if we are available using [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/rbiswas4/photozSN?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge).  
+information on the redshift of the SN. Feel free to discuss this more either by emailing us using the issues feature of this repository, emailing using the ids lisaleemcb and rbiswas4 at gmail.com, or if we are available using [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/rbiswas4/photozSN?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge).  
 
 ## Contents 
 - docs/Outline.rst : A slightly longer description of the project 
