@@ -1,18 +1,21 @@
+** Short Summary
+
 This project is designed to study supernova Type Ia (SNIA) light curves and
 estimate characteristics leading to understanding their peak
-intrinsic brightnesses.  The
-following figure (to see more details go to the
+intrinsic brightnesses.  The following figure (to see more details go to the
 [fitting tutorial](https://github.com/rbiswas4/photozSN/blob/master/docs/Fitting_Template.ipynb))
 show an example light curve describing the brightness of
 the supernova as seen from the earth (y axis) as a
 function of time (x axis, in [Modified Julian Date](https://en.wikipedia.org/wiki/Julian_day))
 in different filter bands as explained in the project pitch.
-![Light Curve](../graphics/lcplot.jpg)
+![Light Curve](../graphics/lcPlot.jpg)
 which are used to infer light curve characterestics with uncertainties
 as shown in ![Inferred Light Curve Parmeters](../graphics/LightCurveFit.jpg)
 The methods of doing these have been devised a couple of
 decades ago, and have been improved over time. We will use different tools to do this, but most of them will be based on implementations in 
 [SNCosmo](http://sncosmo.github.io). You can check out the documentation of that package in [SNCosmo_docs](http://sncosmo.readthedocs.org/en/v1.1.x/ ) while the  [Fitting tutorial](https://github.com/rbiswas4/photozSN/blob/master/docs/Fitting_Template.ipynb) will give you more background about how, why or when to use these tools.
+
+** Background of the Research Area
 
 Scientifically, these light curve characteristics x<sub>1</sub>, c, and
 x<sub>0</sub> (which is often interchanged with a parameter
@@ -27,10 +30,15 @@ and the SuperNova Legacy Survey (SNLS) to obtain the following Hubble Diagram
 logarithmic), which are used to derive constraints on parameters w<sub>0</sub>, w<sub>a</sub>
 often used to  describe dark energy as shown in the next plot. Note the 'Hubble
 diagram' is a function of the light curve parameters m<sub>B</sub>, X<sub>1</sub>,
-C which are some of the parameters that will be determined in analysing light
-curves.
-![JLA_HD](../graphics/JLA_HD_scaled.jpg) ![JLA_DarkEnergy_constraints](../graphics/JLA_w0wa.jpg)
+C which are the parameters that were determined in analysing light
+curves in the plots above.
 
+
+![JLA_HD](../graphics/JLA_HD_scaled.jpg)
+![JLA_DarkEnergy_constraints](../graphics/JLA_w0wa.jpg)
+
+
+** More general background of Research Goals
 
 We want to do this for the most modern datasets from the current and 
 upcoming astronomical surveys like [PANSTARRS](http://pan-starrs.ifa.hawaii.edu/public/),
@@ -61,8 +69,12 @@ astrophysical objects is well known beyond supernovae, and is studied in great d
 This process of recovering photometric redshifts (as it is often called) in
 galaxies is often plagued by the problem of "catastrophic failures", where a
 number of outliers are found to be very different from inferred values compared
-to inferred uncertainties. Once SNIa have been identified, one might expect the
-problem to be easier, but the status is not very clear.
+to inferred uncertainties. Once SNIa have been identified (This requires the
+ classifcation as well), one might expect the problem to be easier, but the actual performance has to be studied. Also, note that supenovae are formed in galaxies, and therefore it may be possible to use information about the galaxy and 
+supernova simultaneously.
+
+
+** Goals of this Project
 
 The basic goals of this project will be to use some of the tools that
 we have (see the [fitting tutorial](https://github.com/rbiswas4/photozSN/blob/master/docs/Fitting_Template.ipynb)
