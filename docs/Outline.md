@@ -1,4 +1,4 @@
-** Short Summary
+## Short Summary
 
 This project is designed to study supernova Type Ia (SNIA) light curves and
 estimate characteristics leading to understanding their peak
@@ -9,13 +9,20 @@ the supernova as seen from the earth (y axis) as a
 function of time (x axis, in [Modified Julian Date](https://en.wikipedia.org/wiki/Julian_day))
 in different filter bands as explained in the project pitch.
 ![Light Curve](../graphics/lcPlot.jpg)
-which are used to infer light curve characterestics with uncertainties
-as shown in ![Inferred Light Curve Parmeters](../graphics/LightCurveFit.jpg)
+
+
+We then use statistical methods to infer a set of light curve characterestics 
+that are useful with  uncertainties as shown in ![Inferred Light Curve Parmeters](../graphics/LightCurveFit.jpg).
+
 The methods of doing these have been devised a couple of
 decades ago, and have been improved over time. We will use different tools to do this, but most of them will be based on implementations in 
-[SNCosmo](http://sncosmo.github.io). You can check out the documentation of that package in [SNCosmo_docs](http://sncosmo.readthedocs.org/en/v1.1.x/ ) while the  [Fitting tutorial](https://github.com/rbiswas4/photozSN/blob/master/docs/Fitting_Template.ipynb) will give you more background about how, why or when to use these tools.
+[SNCosmo](http://sncosmo.github.io). You can check out the documentation of that package in [SNCosmo_docs](http://sncosmo.readthedocs.org/en/v1.1.x/ ) while the  [Fitting tutorial](https://github.com/rbiswas4/photozSN/blob/master/docs/Fitting_Template.ipynb) will give you more background about how, why or when to use these tools. More specifically, the goal of this project will be to understand how well one can estimate the 'redshift' of SNIa  from such light curves. The next
+section will explain what these quantities are and why they are scientifically
+important. Finally, we will discuss how the datasets in currently ongoing and
+up-coming surveys will be different, therefore requiring us to modify our tools,
+and how this project takes a step towards those modifications.
 
-** Background of the Research Area
+## Background of the Research Area
 
 Scientifically, these light curve characteristics x<sub>1</sub>, c, and
 x<sub>0</sub> (which is often interchanged with a parameter
@@ -38,7 +45,7 @@ curves in the plots above.
 ![JLA_DarkEnergy_constraints](../graphics/JLA_w0wa.jpg)
 
 
-** More general background of Research Goals
+## More general background of Research Goals
 
 We want to do this for the most modern datasets from the current and 
 upcoming astronomical surveys like [PANSTARRS](http://pan-starrs.ifa.hawaii.edu/public/),
@@ -48,7 +55,7 @@ of all of these surveys is that the data will be
 a. of large size with good photometry (light curves)
 b. but will not have spectra for a large fraction of light curves, simply
 because it will not be feasible to spectroscopically follow up that many
-light curves within the few week period during which a supernova is visible.
+light curves within the few week period during which a supernova is visible. This is in contranst to the supernovae that were used in constructing the Hubble Diagram above. All of those Supernovae had light curves, but they also had at least one well-measured spectrum. 
 
 Traditionally, light curves have been used to estimate the intrinsic brightness
 of supernovae Type Ia, whereas spectra have been used
@@ -74,7 +81,7 @@ to inferred uncertainties. Once SNIa have been identified (This requires the
 supernova simultaneously.
 
 
-** Goals of this Project
+## Goals of this Project
 
 The basic goals of this project will be to use some of the tools that
 we have (see the [fitting tutorial](https://github.com/rbiswas4/photozSN/blob/master/docs/Fitting_Template.ipynb)
