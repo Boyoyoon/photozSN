@@ -11,7 +11,8 @@ in different filter bands as explained in the project pitch.
 which are used to infer light curve characterestics with uncertainties
 as shown in ![Inferred Light Curve Parmeters](../graphics/LightCurveFit.jpg)
 The methods of doing these have been devised a couple of
-decades ago, and have been improved over time.
+decades ago, and have been improved over time. We will use different tools to do this, but most of them will be based on implementations in 
+[SNCosmo](http://sncosmo.github.io). You can check out the documentation of that package in [SNCosmo_docs](http://sncosmo.readthedocs.org/en/v1.1.x/ ) while the  [Fitting tutorial](https://github.com/rbiswas4/photozSN/blob/master/docs/Fitting_Template.ipynb) will give you more background about how, why or when to use these tools.
 
 Scientifically, these light curve characteristics x<sub>1</sub>, c, and
 x<sub>0</sub> (which is often interchanged with a parameter
@@ -54,8 +55,7 @@ b. Classify the type of SN and confirm that they are Type Ia.
 In the absence of spectra, we will be using light curves to also do these two tasks.
 In particular, during this project, we will work on trying to understand how well
 we can determine redshift from these light curves. The goals of this project
-would be to use our existing tools (many of them based on [SNCosmo](http://sncosmo.github.io),
-check out the documentation in [SNCosmo_docs](http://sncosmo.readthedocs.org/en/v1.1.x/ ).
+would be to use our existing tools 
 More generally, the problem of inferring redshifts from only the photometry of
 astrophysical objects is well known beyond supernovae, and is studied in great detail for galaxies.
 This process of recovering photometric redshifts (as it is often called) in
@@ -71,8 +71,8 @@ for details) on a simulated dataset for LSST which we will provide and use the t
 inferring both the redshift and light curve characteristics from the light curves.
 - Try to understand the cause of 'failures' if significant. For the cases
 we will study, these may be related to
-     - the kind of prior used
-     - Multiple solutions
+     - the kind of prior used on redshift and other parameters simultaneously
+     - Multiple solutions (we have a new update in our methods to explore this)
      - Finiteness of model spectrum.
 
 Characterizing the cause could open up the ways to improve this method in
