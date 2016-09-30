@@ -4,15 +4,26 @@ This project is designed to study supernova Type Ia (SNIA) light curves and
 estimate characteristics leading to understanding their peak
 intrinsic brightnesses.  The following figure (to see more details go to the
 [fitting tutorial](https://github.com/rbiswas4/photozSN/blob/master/docs/Fitting_Template.ipynb))
-show an example light curve describing the brightness of
+shows an example light curve describing the brightness of
 the supernova as seen from the earth (y axis) as a
 function of time (x axis, in [Modified Julian Date](https://en.wikipedia.org/wiki/Julian_day))
 in different filter bands as explained in the project pitch.
 ![Light Curve](../graphics/lcPlot.jpg)
 
+Within the scope that we will be working in a Type Ia SN is described by a
+ handful of parameters (x<sub>0</sub>, x<sub>1</sub>, c, t<sub>0</sub>). If you know these parameters, you can find out the values of the fluxes for that supernova in the light curve plot. What we 
+need to do is the inverse of that problem: Knowing what data we had (described
+ by the little dots) and what the uncertainties on those data points were
+ (described by the error bars), we want to infer the  values of the light curve parameters. This is what the next figure describes.  We  use statistical
+ methods to infer the values of a set of light curve 
+characterestics  that are useful for our work with  uncertainties as shown in the following figure. 
 
-We then use statistical methods to infer a set of light curve characterestics 
-that are useful with  uncertainties as shown in ![Inferred Light Curve Parmeters](../graphics/LightCurveFit.jpg).
+![Inferred Light Curve Parmeters](../graphics/LightCurveFit.jpg)
+How do we understand the above figure?  It tells us that using our methods, we 
+learned that the SNIa could have had different sets of parameters that could give such a light curve, if the measurement uncertainties are represented by the
+error bars. The histograms along the diagonal represent the probability of each
+parameter, while the contour plots describe the joint probability of pairs of
+parameters. 
 
 The methods of doing these have been devised a couple of
 decades ago, and have been improved over time. We will use different tools to do this, but most of them will be based on implementations in 
